@@ -44,3 +44,11 @@ Layouten gör ni för följande:
 Mobil
 Tablet
 Desktop
+
+## Länkar i projektet (assets)
+
+- https://wweb.dev/resources/css-separator-generator/
+CSS - separator
+
+- https://www.pexels.com/photo/photography-of-sliced-bread-1079020/
+(brödbild)
