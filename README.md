@@ -23,7 +23,7 @@
 - #343833
 - #00c9ac (kontrasterande färg)
 
-## Följande "komponenter" ska finnas med i designen:
+## 3 Följande "komponenter" ska finnas med i designen:
 
 - 3-5 st färger (angett vilka som är primära, sekundära, osv.), utöver svart och vitt.
 - Rubriker nivå 1-6 (typsnitt, storlek, stil typ kursiv/fet, radavstånd)
