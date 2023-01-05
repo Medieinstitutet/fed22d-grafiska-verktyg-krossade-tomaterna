@@ -6,20 +6,20 @@ Av Susanne Arnetz Linder, Joel del Pilar, Robin Sevelin och Jenny Waller.<br>
 /**************************************************************************************************************************/
 
 ## PROJEKT
-Designa till en onepage hemsida till den fiktiva restaurangen KOMMANDORANS.
-Uppgiften handlade om att i ett team av 4 utforma en design till en onepage hemsida som vi sedan ska lämna över till nästa grupp för att koda upp sidan.
+Designa till en onepage-hemsida till den fiktiva restaurangen KOMMANDORANS.
+Uppgiften handlade om att i ett team av 4 utforma en design till en onepage-hemsida som vi sedan ska lämna över till nästa grupp för att koda upp sidan.
 
 ### OM DESIGNEN:
-Inspirerade av FED20 arbeten i samma kurs, fastnade vi för projektet MATATELJEN, och med en tidigare kock i gruppen, jullov med föreställning med Emil i Lönneberga samt lite hur världen ser ut just nu, så bollades det idéer från Kommandoran och fattighuset, till en restaurang på Söder i Stockholm nischad till just gårdslivet förr.
+Inspirerade av FED20-arbeten i samma kurs, fastnade vi för projektet MATATELJEN, och med en tidigare kock i gruppen, jullov med föreställning med Emil i Lönneberga samt lite hur världen ser ut just nu, så bollades det idéer från Kommandoran och fattighuset, till en restaurang på Söder i Stockholm nischad till just gårdslivet förr.
 
-Som syns i vår MoodBoard, bilder i svartvitt, färger i dovt, brunt, grått och beiget, och mat med kål, rotfrukter, potatis och såklart inspirerad av Astrid Lindgrens berättelse om när Emil kommer i kontakt med Kommandoran och korv.
+Som syns i vår MoodBoard, bilder i svartvitt, färger i dovt, brunt, grått och beige och mat med kål, rotfrukter, potatis och såklart inspirerad av Astrid Lindgrens berättelse om när Emil kommer i kontakt med Kommandoran och korv.
 Till detta en kontrastfärg för att riktigt sticka ut på våra highlights samt CTA’s.<br><br>
 
-Typsnitt valdes där rubrik skulle vara något bestämt och kraftigt, med auktoritär känsla, och där sub-rubrik och brödtext är mer enkla och i kontrast med vår rubrik, men samtidigt passar ihop som en helhet.<br><br>
+Typsnitt valdes där rubrik skulle vara något bestämt och kraftigt, med auktoritär känsla, och där subrubrik och brödtext är mer enkla och i kontrast med vår rubrik men samtidigt passar ihop som en helhet.<br><br>
 
 Vår fiktiva meny bygger på olika karaktärer ur Lönneberga och olika ätbara segment därifrån.<br>
 En liten, dov, jordnära restaurang i hjärtat på Södermalm i Stockholm.
-Där meny, råvaror, känsla och de visuella uttrycken speglas i vår design men en liten modern twist.<br><br>
+Där meny, råvaror, känsla och de visuella uttrycken speglas i vår design med en liten modern twist.<br><br>
 
 Vi har gjort både mood board, grafisk profil gällande element samt mockups av olika devices i FIGMA, bildbehandlat foton i photoshop samt de vektorgrafik element vi har är gjorda i illustrator.
 
@@ -78,7 +78,7 @@ Tanken är att korvarna ska vända 180grader och menyn rullar ner i samband med 
   - desktop: meny-vy  ~25%
 
 ##### COOKIEBANNER:
-botten-placering. 
+bottenplacering. 
 
 ##### BOKA BORD POPUP:
 vid klick på boka bord; popup med inputfält.
@@ -109,11 +109,11 @@ På vår sida med Components i FIGMA har våra inputfält 3 states:<br>
 * En färgborder för confirmed rätt ifyllda fält
 * En färgborder för fel-ifyllt/ inte ifylld, error-fält.<br><br>
 
-Se färg-referenser design & states I FIGMA:<br>
+Se färgreferenser design & states I FIGMA:<br>
 https://www.figma.com/file/vuF2awgrtiQRkeBkI1ufSO/Krossade-Tomater?node-id=0%3A1&t=9TQwXXHjtCBHRtOU-1
 
 ##### MÖJLIGA ANIMATIONER:
-vår meny i form av 3 korvar är i SVG-format och namngivna per korv, 
+Vår meny i form av 3 korvar är i SVG-format och namngivna per korv, 
 ID för vardera är:<br>
 * #sausage_x5f_top
 * #sausage_x5f_middle
