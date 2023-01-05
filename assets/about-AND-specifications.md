@@ -70,17 +70,21 @@ I mappen Assets finns följande:
 * Svg - logga som svg samt korv-meny i svg 
 * texts - meny i oformaterat textformat
 
+##### MENY:
+klick på korvarna öppnar menyn.<br>
+Tanken är att korvarna ska vända 180grader och menyn rullar ner i samband med detta.
+  - mobil: meny-vy storlek 100%
+  - tablet: meny-vy storlek 75%
+  - desktop: meny-vy  ~25%
 
-##### MÖJLIGA ANIMATIONER:
-vår meny i form av 3 korvar är i SVG-format och lager-namngivna per korv, 
-ID för vardera är:<br>
-* #sausage_x5f_top
-* #sausage_x5f_middle
-* #sausage_x5f_bottom.<br><br>
+##### COOKIEBANNER:
+botten-placering. 
 
-Möjlighet att byta ut loggan i png till samma bild (men enfärgad SVG) finns med:
-* för stora delen av bilden, konturerna där allt hänger ihop är ID #kommandoran.
-* Vill man ge sig på en animering av blink med vänstra ögat är denna frilagd och har ID #left_x5F_eye<br><br>
+##### BOKA BORD POPUP:
+vid klick på boka bord; popup med inputfält.
+  - mobil: täcker hela av skärmen
+  - tablet: täcker ca 75% av skärmen, mittplacering
+  - desktop: täcker ca 50% av skärmen, mittplacering
 
 ##### KNAPPAR:
 På vår sida med Components i FIGMA har våra knappar 4 states:<br>
@@ -103,10 +107,21 @@ https://www.figma.com/file/vuF2awgrtiQRkeBkI1ufSO/Krossade-Tomater?node-id=0%3A1
 På vår sida med Components i FIGMA har våra inputfält 3 states:<br>
 * en färgborder för default- icke ifyllda fält
 * En färgborder för confirmed rätt ifyllda fält
-* En färgborder för felifyllt/ inte ifylld, error, fält.<br><br>
+* En färgborder för fel-ifyllt/ inte ifylld, error-fält.<br><br>
 
 Se färg-referenser design & states I FIGMA:<br>
 https://www.figma.com/file/vuF2awgrtiQRkeBkI1ufSO/Krossade-Tomater?node-id=0%3A1&t=9TQwXXHjtCBHRtOU-1
+
+##### MÖJLIGA ANIMATIONER:
+vår meny i form av 3 korvar är i SVG-format och namngivna per korv, 
+ID för vardera är:<br>
+* #sausage_x5f_top
+* #sausage_x5f_middle
+* #sausage_x5f_bottom.<br><br>
+
+Möjlighet att byta ut loggan i png till samma bild (men enfärgad SVG) finns med:
+* för stora delen av bilden, konturerna där allt hänger ihop är ID #kommandoran.
+* Vill man ge sig på en animering av blink med vänstra ögat är denna frilagd och har ID #left_x5F_eye<br><br>
 
 ### Länkar i projektet
 https://wweb.dev/resources/css-separator-generator/ CSS - separator<br>
