@@ -1,7 +1,7 @@
-Designprojekt FED22d -
-Grafiska verktyg och gränssnittsdesign
-Januari 2023
-Av Susanne Arnetz Linder, Joel del Pilar, Robin Sevelin och Jenny Waller.
+Designprojekt FED22d<br>
+Grafiska verktyg och gränssnittsdesign<br>
+Januari 2023<br>
+Av Susanne Arnetz Linder, Joel del Pilar, Robin Sevelin och Jenny Waller.<br>
 
 /**************************************************************************************************************************/
 
@@ -22,22 +22,6 @@ En liten, dov, jordnära restaurang i hjärtat på Södermalm i Stockholm.
 Där meny, råvaror, känsla och de visuella uttrycken speglas i vår design men en liten modern twist.<br><br>
 
 Vi har gjort både mood board, grafisk profil gällande element samt mockups av olika devices i FIGMA, bildbehandlat foton i photoshop samt de vektorgrafik element vi har är gjorda i illustrator.
-
-### FIKTIV BRIEF:
-KOMMANDORANS - lyxmat för var mans plånbok<br><br>
-
-I en tid då elpriser skenar, inflationen är ett faktum och där vi blir mer och mer medvetna om hur vi påverkar jordens resurser, då är det dags att ta nästa steg i utvecklingen och faktiskt gå tillbaka i tiden och ta lära av vår dåtid.<br><br>
-
-KOMMANDORANS ligger precis rätt i tiden.
-Lokalt, närodlat, härodlat, därodlat och att ta till vara på bondesamhällets mattradition men i nutid.<br><br>
-
-Med fantastiskt lokala råvaror som potatis, lök, kål, egna odlingar av både bär och skaldjur, vill vi att just du ska få en helhetsupplevelse utöver det vanliga på KOMMANDORANS.<br>
-Skippa importerad mat och låt oss på KOMMANDORANS erbjuda hållbar mat för framtiden.<br><br>
-
-Och varför inte boka in Tabberaset - en matupplevelse utöver det vanliga och där  KOMMANDORANS alla fantastiska rätter serveras i ett? (Går enbart att bokas vid minst 4 i sällskap).<br><br>
-
-_Välkomna till KOMMANDORANS!_<br><br>
-
 
 ## SPECIFIKATIONER 
 
