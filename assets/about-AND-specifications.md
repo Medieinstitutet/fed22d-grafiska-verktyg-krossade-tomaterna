@@ -11,13 +11,13 @@ Uppgiften handlade om att i ett team av 4 utforma en design till en onepage hems
 
 ### OM DESIGNEN:
 Inspirerade av FED20 arbeten i samma kurs, fastnade vi för projektet MATATELJEN, och med en tidigare kock i gruppen, jullov med föreställning med Emil i Lönneberga samt lite hur världen ser ut just nu, så bollades det idéer från Kommandoran och fattighuset, till en restaurang på Söder i Stockholm nischad till just gårdslivet förr.
-Vår fiktiva meny bygger på olika karaktärer ur Lönneberga och olika ätbara segment därifrån.
- Som syns i vår MoodBoard, bilder i svartvitt, färger i dovt, brunt, grått och beiget, och mat med kål, rotfrukter, potatis och såklart inspirerad av Astrid Lindgrens berättelse om när Emil kommer i kontakt med Kommandoran och korv.
+
+Som syns i vår MoodBoard, bilder i svartvitt, färger i dovt, brunt, grått och beiget, och mat med kål, rotfrukter, potatis och såklart inspirerad av Astrid Lindgrens berättelse om när Emil kommer i kontakt med Kommandoran och korv.
 Till detta en kontrastfärg för att riktigt sticka ut på våra highlights samt CTA’s.<br><br>
 
 Typsnitt valdes där rubrik skulle vara något bestämt och kraftigt, med auktoritär känsla, och där sub-rubrik och brödtext är mer enkla och i kontrast med vår rubrik, men samtidigt passar ihop som en helhet.<br><br>
 
-Och som twist till en enkel meny, med vanliga råvaror, där det naturliga, enkla är i fokus, i en tid då både det lokala, närproducerade och det hantverksmannamässiga är i kontrast till de större restaurangkedjorna samt importerade råvaror, så hamnade vi här.<br>
+Vår fiktiva meny bygger på olika karaktärer ur Lönneberga och olika ätbara segment därifrån.<br>
 En liten, dov, jordnära restaurang i hjärtat på Södermalm i Stockholm.
 Där meny, råvaror, känsla och de visuella uttrycken speglas i vår design men en liten modern twist.<br><br>
 
