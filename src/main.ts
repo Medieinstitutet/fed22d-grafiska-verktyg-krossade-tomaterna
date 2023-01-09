@@ -1,6 +1,6 @@
-import './style.css'
-import typescriptLogo from './typescript.svg'
-import { setupCounter } from './counter'
+import './style.css';
+import typescriptLogo from './typescript.svg';
+import { setupCounter } from './counter';
 
 const app: HTMLDivElement | null = document.querySelector('#app');
 
