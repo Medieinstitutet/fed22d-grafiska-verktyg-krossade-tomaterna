@@ -9,6 +9,7 @@
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
+    // "project": "./kommandorans/tsconfig.json"
   },
   "plugins": ["@typescript-eslint"],
   "rules": {}
