@@ -1,29 +1,11 @@
 import './style/style.css';
-import typescriptLogo from './typescript.svg';
-import { setupCounter } from './counter';
 
-const app: HTMLDivElement | null = document.querySelector('#app');
+const menuBtn: HTMLButtonElement | null = document.querySelector('#menu-btn');
+const sausageTop: any = document.querySelector('#sausage_x5F_top');
 
-if (app) {
-  app.innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
-}
+let clicked = false;
 
-const counter: HTMLButtonElement | null = document.querySelector('#counter');
-
-if (counter) { setupCounter(counter) }
+menuBtn?.addEventListener('click', () => {
+  clicked = !clicked;
+  sausageTop.style.transform = clicked ? 'rotate(18deg)' : 'rotate(0deg)';
+})
