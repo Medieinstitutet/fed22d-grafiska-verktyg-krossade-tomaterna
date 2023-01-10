@@ -3,7 +3,11 @@ name: deploy changes
 on:
   push:
     branches:
-      - 'feat/**'
+      - main
+  pull_request:
+    branches:
+      - main
+
 
 jobs:
   deploy:
