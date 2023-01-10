@@ -1,12 +1,12 @@
 name: deploy changes
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
     branches:
       - main
+  pull_request:
+    types:
+      - closed
 
 
 jobs:
