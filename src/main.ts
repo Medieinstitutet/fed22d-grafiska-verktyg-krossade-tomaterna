@@ -2,22 +2,18 @@ import './style/style.css';
 import gsap from 'gsap';
 
 const menuBtn: HTMLButtonElement | null = document.querySelector('#menu-btn');
-const sausageTop: SVGGElement | null = document.querySelector('#sausage_x5F_top');
 const menuSausages: SVGElement[] | null = Array.from(document.querySelectorAll('.menu-sausages'));
 
 let clicked = false;
 
-menuBtn?.addEventListener('click', () => {
+function toggleNavMenu(): void {
   clicked = !clicked;
+  const rotationValue = clicked ? 180 : 0;
   if (menuSausages) { 
-    // sausageTop.style.transform = clicked ? 'rotate(180deg)' : 'rotate(0deg)';
     menuSausages.forEach((sausage) => {
-      if (clicked) {
-        gsap.to(sausage, {duration: 1, rotation: 180, transformOrigin: '50% 50%'})
-      } else {
-        gsap.to(sausage, {duration: 1, rotation: 0, transformOrigin: '50% 50%'})
-      }
-      // sausage.style.transform = clicked ? 'rotate(180deg)' : 'rotate(0deg)';
+        gsap.to(sausage, { duration: 1, rotation: rotationValue, transformOrigin: '50% 50%' })
     });
   }
-});
+}
+
+menuBtn?.addEventListener('click', toggleNavMenu);
