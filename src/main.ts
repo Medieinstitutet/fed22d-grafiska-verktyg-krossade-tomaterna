@@ -1,29 +1,19 @@
 import './style/style.css';
-import typescriptLogo from './typescript.svg';
-import { setupCounter } from './counter';
+import gsap from 'gsap';
 
-const app: HTMLDivElement | null = document.querySelector('#app');
+const menuBtn: HTMLButtonElement | null = document.querySelector('#menu-btn');
+const menuSausages: SVGElement[] | null = Array.from(document.querySelectorAll('.menu-sausages'));
 
-if (app) {
-  app.innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
+let clicked = false;
+
+function toggleNavMenu(): void {
+  clicked = !clicked;
+  const rotationValue = clicked ? 180 : 0;
+  if (menuSausages) { 
+    menuSausages.forEach((sausage) => {
+        gsap.to(sausage, { duration: 1, rotation: rotationValue, transformOrigin: '50% 50%' })
+    });
+  }
 }
 
-const counter: HTMLButtonElement | null = document.querySelector('#counter');
-
-if (counter) { setupCounter(counter) }
+menuBtn?.addEventListener('click', toggleNavMenu);
