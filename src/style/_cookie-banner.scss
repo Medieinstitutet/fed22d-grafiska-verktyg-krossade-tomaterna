@@ -1,0 +1,11 @@
+.cookie-container{
+    background-color: $primary-dark;
+    color: $secondary-light;
+    border: 3px solid $primary-accessory;
+    padding: 10px;
+
+    .link-and-btn{
+        display: flex;
+        justify-content: space-between;
+    }
+}
