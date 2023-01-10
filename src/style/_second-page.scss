@@ -5,13 +5,27 @@ main {
     .food {
         margin-top: -20px;
     }
+
+    .card {
+        background-color: #8F7B6E;
+        border: 5px solid #00C9AC;
+        border-bottom-left-radius: 50% 60%;
+        border-bottom-right-radius: 50% 60%;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 200px;
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 
 @media (min-width: $breakpoint-desktop) {
     main {
-        margin-top: -130px;
-        border-top-left-radius: 50% 60%;
-        border-top-right-radius: 50% 60%;
+        margin-top: -150px;
+        border-top-left-radius: 100% 60%;
+        border-top-right-radius: 100% 60%;
       }
 }
