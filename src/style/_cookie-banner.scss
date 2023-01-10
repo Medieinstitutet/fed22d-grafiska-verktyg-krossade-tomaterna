@@ -1,11 +1,26 @@
-.cookie-container{
+.cookie-container {
+    position: fixed;
+    bottom: 0;
     background-color: $primary-dark;
     color: $secondary-light;
     border: 3px solid $primary-accessory;
-    padding: 10px;
+    padding: 5px 5px;
 
-    .link-and-btn{
+    .link-and-btn-container {
         display: flex;
         justify-content: space-between;
+        align-content: center;
     }
 }
+
+/*
+
+.cookie-txt {
+    margin: 0;
+    padding: 5px;
+} */
+
+.cookie-txt::first-line {
+    font-size: 1.25rem;
+}
+

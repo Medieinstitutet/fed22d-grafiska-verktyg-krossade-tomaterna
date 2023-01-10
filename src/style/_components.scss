@@ -68,6 +68,8 @@ input {
 }
 
 a {
+    display: inline-block;
+    line-height: 20px;
     color: black;
     text-decoration: none;
     border-bottom: 3px solid $secondary-light;
