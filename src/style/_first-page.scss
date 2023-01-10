@@ -1,0 +1,21 @@
+.first-page {
+    background-image: url("/assets/hero/mobile.jpg");
+    background-color: #343833;
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (min-width: $breakpoint-tablet) {
+    .first-page {
+        background-image: url("/assets/hero/tablet.jpg");
+    }
+}
+
+@media (min-width: $breakpoint-desktop) {
+    .first-page {
+        background-image: url("/assets/hero/desktop.jpg");
+    }
+}

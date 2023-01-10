@@ -1,0 +1,17 @@
+main {
+    background-color: #343833;
+    color: #C5AFA2;
+
+    .food {
+        margin-top: -20px;
+    }
+}
+
+
+@media (min-width: $breakpoint-desktop) {
+    main {
+        margin-top: -130px;
+        border-top-left-radius: 50% 60%;
+        border-top-right-radius: 50% 60%;
+      }
+}

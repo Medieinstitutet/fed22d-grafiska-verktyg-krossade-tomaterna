@@ -1,3 +1,14 @@
+:root {
+    // background-color: #343833;
+}
+
+body {
+    margin: 0;
+}
+
+$breakpoint-tablet: 744px;
+$breakpoint-desktop: 1440px;
+
 @import './components';
 @import './header';
 @import './first-page';
