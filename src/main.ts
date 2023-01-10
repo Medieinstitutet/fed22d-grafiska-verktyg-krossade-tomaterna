@@ -1,4 +1,4 @@
-import './style/style.css';
+import './style/style.scss';
 import gsap from 'gsap';
 
 const menuBtn: HTMLButtonElement | null = document.querySelector('#menu-btn');
