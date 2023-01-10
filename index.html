@@ -5,6 +5,11 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kommandorans</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
   </head>
   <body>
 
@@ -118,8 +123,8 @@
             </ul>
           </nav>
           <div class="header-buttons">
-            <button class="primary-button">Boka bord</button>
-            <button class="secondary-button">Tabberaset</button>
+            <button class="primary-button menu-btn">Boka bord</button>
+            <button class="secondary-button menu-btn">Tabberaset</button>
           </div>
 
           <div class="cookie-container">
@@ -134,7 +139,7 @@
               <button>Avböj</button>
             </section>
           </div>
-          
+
       </section>
 
       <main>
@@ -194,12 +199,20 @@
         </div>
         <img src="" alt="">
 
-        <div class="card"></div>
-        <div class="book-table">
-          <form>
+        <div class="card">
+
+          <div class="card-info">
+            <p class="card-begransat-erbjudande">Begränsat erbjudande</p>
+            <p class="card-tabberaset">TABBERASET</p>
+            <p class="card-alla-ratter">Alla rätter på menyn, endast till sällskap över fyra personer</p>
+          </div>
+          <button class="primary-button card-button">Boka bord</button>
+
+          <form class="booking-popup">
             <label>Ditt namn</label><br>
             <input placeholder="Förnamn Efternamn">
           </form>
+
         </div>
       </main>
 

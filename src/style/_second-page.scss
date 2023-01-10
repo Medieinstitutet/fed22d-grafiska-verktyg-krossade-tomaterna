@@ -8,16 +8,56 @@ main {
 
     .card {
         background-color: #8F7B6E;
-        border: 5px solid #00C9AC;
-        border-bottom-left-radius: 50% 60%;
-        border-bottom-right-radius: 50% 60%;
+        border: 8px solid #00C9AC;
+        border-radius: 0 0 250px 250px;
+        box-shadow: inset 13px 12px 4px 3px rgba(0, 201, 172, 0.25);
+        // filter: blur(2px);
         margin-left: 10px;
         margin-right: 10px;
-        height: 200px;
+        height: 400px;
+        width: 341px;
 
-        display: flex;
-        flex-direction: column;
+        position: relative;
         text-align: center;
+
+        .card-info {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            .card-begransat-erbjudande {
+                font-family: 'Fugaz One';
+                font-size: 24px;
+                color: #FFE9CF;
+            }
+            .card-tabberaset {
+                font-family: 'Roboto';
+                font-size: 24px;
+                font-weight: 700;
+                color: #FFE9CF;
+            }
+            .card-alla-ratter {
+                font-family: Roboto;
+                font-size: 20px;
+                font-weight: 400;
+                color: #151614;
+            }
+        }
+
+        .card-button {
+            margin: 0;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            width: 150px;
+            height: 50px;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .booking-popup {
+            display: none;
+        }
     }
 }
 
