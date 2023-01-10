@@ -1,1 +1,40 @@
 @import './components';
+
+header {
+  
+  .logo {
+    display: flex;
+
+    .logo-img {
+      display: none;
+    }
+  }
+}
+
+button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  z-index: 2;
+}
+
+.doner-menu-img {
+  height: 50px;
+  width: 59px;
+}
+
+@media screen and (min-width: 744px) {
+  .doner-menu-img {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .doner-menu-img {
+    height: 75px;
+    width: 75px;
+  }
+}
