@@ -11,8 +11,13 @@ const nav: HTMLElement | null = document.querySelector('#nav');
 const cookieContainer: HTMLDivElement | null = document.querySelector('#cookie-container');
 const acceptCookiesBtn: HTMLButtonElement | null = document.querySelector('#accept-cookies');
 const declineCookiesBtn: HTMLButtonElement | null = document.querySelector('#decline-cookies');
+const cookiesApproved: boolean | null = JSON.parse(localStorage.getItem('cookiesApproved') as string) as boolean;
 
 let clicked = false;
+
+if (cookiesApproved) {
+  cookieContainer?.classList.toggle('hidden');
+}
 
 function toggleNavMenu(): void {
   clicked = !clicked;
@@ -34,10 +39,16 @@ function toggleNavMenu(): void {
   }
 }
 
-function cookiesChoice(): void {
+function acceptCookies() {
   cookieContainer?.classList.toggle('hidden');
+  localStorage.setItem('cookiesApproved', 'true');
+}
+
+function declineCookies() {
+  cookieContainer?.classList.toggle('hidden');
+  localStorage.setItem('cookiesApproved', 'false');
 }
 
 menuBtn?.addEventListener('click', toggleNavMenu);
-acceptCookiesBtn?.addEventListener('click', cookiesChoice);
-declineCookiesBtn?.addEventListener('click', cookiesChoice);
+acceptCookiesBtn?.addEventListener('click', acceptCookies);
+declineCookiesBtn?.addEventListener('click', declineCookies);
