@@ -7,8 +7,16 @@ main {
     }
 }
 
-@media (min-width: $breakpoint-tablet) {
+.table-picture {
+    width: 270px;
+    border: 6px solid rgba(32, 32, 32, 0.57);
+    box-shadow: 10px 15px 35px 35px rgba(32, 32, 32, 0.50), inset 10px 10px 70px 20px rgba(0, 0, 0, 0.6);
+}
 
+@media (min-width: $breakpoint-tablet) {
+    .table-picture {
+        width: 345px;
+    }
 }
 
 @media (min-width: $breakpoint-desktop) {
@@ -17,4 +25,8 @@ main {
         border-top-left-radius: 100% 30%;
         border-top-right-radius: 100% 30%;
       }
+
+    .table-picture {
+        width: 420px;
+    }
 }
