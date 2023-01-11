@@ -1,9 +1,11 @@
 main {
     color: #C5AFA2;
+}
 
-    .food {
-        margin-top: -20px;
-    }
+.food {
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .table-picture {
@@ -33,5 +35,10 @@ main {
 
     .table-picture {
         width: 420px;
+    }
+
+    .food {
+        flex-direction: row;
+        justify-content: center;
     }
 }
