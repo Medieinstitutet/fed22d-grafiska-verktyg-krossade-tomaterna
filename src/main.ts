@@ -8,6 +8,10 @@ const menuSausages: SVGElement[] | null = Array.from(document.querySelectorAll('
 const navContainer: HTMLDivElement | null = document.querySelector('#nav-container');
 const nav: HTMLElement | null = document.querySelector('#nav');
 
+const cookieContainer: HTMLDivElement | null = document.querySelector('#cookie-container');
+const acceptCookiesBtn: HTMLButtonElement | null = document.querySelector('#accept-cookies');
+const declineCookiesBtn: HTMLButtonElement | null = document.querySelector('#decline-cookies');
+
 let clicked = false;
 
 function toggleNavMenu(): void {
@@ -30,4 +34,10 @@ function toggleNavMenu(): void {
   }
 }
 
+function cookiesChoice(): void {
+  cookieContainer?.classList.toggle('hidden');
+}
+
 menuBtn?.addEventListener('click', toggleNavMenu);
+acceptCookiesBtn?.addEventListener('click', cookiesChoice);
+declineCookiesBtn?.addEventListener('click', cookiesChoice);
