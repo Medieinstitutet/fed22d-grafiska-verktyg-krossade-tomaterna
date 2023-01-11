@@ -7,12 +7,6 @@
     border: 3px solid $primary-accessory;
     padding: 15px;
 
-    .link-and-btn-container {
-        display: flex;
-        justify-content: space-between;
-       
-    }
-
     .cookie-txt {
         margin: 0 0 10px;
     } 
@@ -22,9 +16,14 @@
         padding: 0;
         margin: 0;
     }
-    
-    .cookie-link {
-        margin-top: 10px;
+
+    .link-and-btn-container {
+        display: flex;
+        justify-content: space-between;
+
+        .cookie-link {
+            margin-top: 10px;
+        }
     }
 }
 
