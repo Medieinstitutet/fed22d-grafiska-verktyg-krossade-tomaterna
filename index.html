@@ -8,22 +8,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto+Slab&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kommandorans</title>
-    <script type="module" crossorigin src="/fed22d-grafiska-verktyg-krossade-tomaterna/assets/index-59cac3ab.js"></script>
-    <link rel="stylesheet" href="/fed22d-grafiska-verktyg-krossade-tomaterna/assets/index-f7804052.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto+Slab&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <script type="module" crossorigin src="/fed22d-grafiska-verktyg-krossade-tomaterna/assets/index-d907d833.js"></script>
+    <link rel="stylesheet" href="/fed22d-grafiska-verktyg-krossade-tomaterna/assets/index-7d46fefb.css">
   </head>
+
   <body>
-      <section class="first-page">
-        <header>
-          <div class="logo">
-            <img class="logo-img" src="/fed22d-grafiska-verktyg-krossade-tomaterna/assets/kommandoran-33ca8314.png" alt="Kommandoran"  width="160" height="245">
-            <div class="logo-text">
-              <h1 class="logo-heading">Kommandorans</h1>
-              <h5 class="logo-sub-heading">- Lyxmat för var mans plånbok</h5>
-            </div>
+    <section class="first-page">
+      <header>
+        <div class="logo">
+          <img class="logo-img" src="/fed22d-grafiska-verktyg-krossade-tomaterna/assets/kommandoran-33ca8314.png" alt="Kommandoran"  width="160" height="245">
+          <div class="logo-text">
+            <h1 class="logo-heading">Kommandorans</h1>
+            <h5 class="logo-sub-heading">- Lyxmat för var mans plånbok</h5>
           </div>
-          <button id="menu-btn" class="menu-btn">
-            <svg version="1.1" class="doner-menu-img" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-               viewBox="0 -200 800 1150" style="enable-background:new 0 0 800 800;" xml:space="preserve">
+        </div>
+        <button id="menu-btn" class="menu-btn">
+          <svg version="1.1" class="doner-menu-img" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 -200 800 1150" style="enable-background:new 0 0 800 800;" xml:space="preserve">
             <style type="text/css">
               .st0 {
                 fill: #75433B;
@@ -134,31 +140,40 @@
         </button>
       </header>
 
-      <nav>
-        <ul>
-        </ul>
-      </nav>
       <div class="header-buttons">
-        <button class="primary-button">Boka bord</button>
-        <button class="secondary-button">Tabberaset</button>
+        <button class="primary-button menu-btn">Boka bord</button>
+        <button class="secondary-button menu-btn">Tabberaset</button>
       </div>
-      <div class="card"></div>
-      <div class="cookie-container" hidden>
-        <section class="cookie-txt-container">
-          <h6 class="cookie-header">Cookies</h6>
-          <p class="cookie-txt">
-            Vi använder cookies på den här sidan för att ge dig en bättre upplevelse.
-            Vissa behövs för att sidan ska fungera korrekt men andra kan du välja att godkänna.
-          </p>
+
+      <div class="card top-card">
+
+        <div class="card-info">
+          <p class="card-topic">Begränsat erbjudande</p>
+          <p class="card-title">TABBERASET</p>
+          <p class="card-text">Alla rätter på menyn, endast till sällskap över fyra personer</p>
+        </div>
+        <button class="primary-button card-button">Boka bord</button>
+
+        <form class="booking-popup">
+          <label>Ditt namn</label><br>
+          <input placeholder="Förnamn Efternamn">
+        </form>
+
+      </div>
+
+      <div class="cookie-container">
+        <section class="cookie-txt">
+          <p>Cookies
+          Vi använder cookies på den här sidan för att ge dig en bättre upplevelse. 
+          Vissa behövs för att sidan ska fungera korrekt men andra kan du välja att godkänna.</p>
         </section>
-        <section class="link-and-btn-container">
-          <a href="" class="cookie-link">Cookies-inställningar</a>
-          <div class="cookie-btns">
-            <button id="accept-cookies" class="primary-button">Godkänn</button>
-            <button id="decline-cookies" class="secondary-button">Avböj</button>
-          </div>
+        <section class="link-and-btn">
+          <a href="">Cookies-inställningar</a>
+          <button>Godkänn</button>
+          <button>Avböj</button>
         </section>
       </div>
+
     </section>
 
     <main>
@@ -170,7 +185,7 @@
             <li>
               Alfreds potäter
               -potatis med salt
-            </li>
+            </li> 
             <li>
               Almas kräfter
               -nyfångade kräftor från lokal å i Lönneberga
@@ -189,7 +204,7 @@
               -traditionellt recept med rimmat fläsk
             </li>
             <li>
-              Emils köttsoppa
+              Emils köttsoppa 
               - långkok på nötkött och olika slag av kål
             </li>
             <li>
@@ -216,13 +231,22 @@
           </ul>
         </section>
       </div>
+
       <img class="table-picture" width="420" height="auto" src="/fed22d-grafiska-verktyg-krossade-tomaterna/assets/chefs-table-b69d2c55.jpg" alt="dinner around table picture">
-      <div class="card">TestTEST</div>
-      <div class="book-table">
-        <form>
+
+      <div class="card bottom-card">
+        <div class="card-info">
+          <p class="card-topic">Begränsat erbjudande</p>
+          <p class="card-title">TABBERASET</p>
+          <p class="card-text">Alla rätter på menyn, endast till sällskap över fyra personer</p>
+        </div>
+        <button class="primary-button card-button">Boka bord</button>
+
+        <form class="booking-popup">
           <label>Ditt namn</label><br>
           <input placeholder="Förnamn Efternamn">
         </form>
+
       </div>
     </main>
 
@@ -249,7 +273,9 @@
         </div>
       </div>
     </footer>
+
   </div>
+  
   
 </body>
 
