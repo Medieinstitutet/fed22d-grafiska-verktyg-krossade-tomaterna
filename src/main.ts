@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import './style/style.scss';
 import gsap from 'gsap';
 
@@ -8,9 +9,9 @@ let clicked = false;
 
 function toggleNavMenu(): void {
   clicked = !clicked;
-  if (menuSausages) { 
+  if (menuSausages) {
     menuSausages.forEach((sausage) => {
-        gsap.to(sausage, { duration: 1, rotation: clicked ? 180 : 0, transformOrigin: '50% 50%' })
+      gsap.to(sausage, { duration: 1, rotation: clicked ? 180 : 0, transformOrigin: '50% 50%' });
     });
   }
 }
