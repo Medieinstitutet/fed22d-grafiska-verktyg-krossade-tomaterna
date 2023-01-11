@@ -6,6 +6,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    .top-card{
+        display: none;
+    }
 }
 
 @media (min-width: $breakpoint-tablet) {
