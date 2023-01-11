@@ -5,63 +5,73 @@ main {
     .food {
         margin-top: -20px;
     }
+}
 
-    .card {
-        background-color: #8F7B6E;
-        border: 8px solid #00C9AC;
-        border-radius: 0 0 250px 250px;
-        box-shadow: inset 13px 12px 4px 3px rgba(0, 201, 172, 0.25);
-        // filter: blur(2px);
-        opacity: 80%;
-        margin-left: 10px;
-        margin-right: 10px;
-        height: 400px;
-        width: 341px;
+.card {
+    background-color: #8F7B6E;
+    border-radius: 0 0 250px 250px;
+    box-shadow: inset 0 0 5px 5px #00C9AC, 0 0 5px 5px #00C9AC;
+    opacity: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 400px;
+    width: 341px;
 
-        position: relative;
-        text-align: center;
+    position: relative;
+    text-align: center;
 
-        .card-info {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
+    .card-info {
+        margin: 0;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        width: 264px;
+        height: 50px;
+        line-height: 35px;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        
 
-            .card-topic {
-                font-family: 'Fugaz One';
-                font-size: 24px;
-                color: $secondary-light;
-            }
-            .card-title {
-                font-family: 'Roboto';
-                font-size: 24px;
-                font-weight: 700;
-                color: $secondary-light;
-            }
-            .card-text {
-                font-family: Roboto;
-                font-size: 20px;
-                font-weight: 400;
-                color: #151614;
-            }
+        .card-topic {
+            font-family: 'Fugaz One';
+            font-size: 24px;
+            color: $secondary-light;
         }
-
-        .card-button {
-            margin: 0;
-            position: absolute;
-            top: 80%;
-            left: 50%;
-            width: 150px;
-            height: 50px;
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+        .card-title {
+            font-family: 'Roboto';
+            font-size: 24px;
+            font-weight: 700;
+            color: $secondary-light;
         }
-
-        .booking-popup {
-            display: none;
+        .card-text {
+            font-family: Roboto;
+            font-size: 20px;
+            font-weight: 400;
+            color: #151614;
+            width: 264px;
         }
+    }
+
+    .card-button {
+        margin: 0;
+        position: absolute;
+        top: 88%;
+        left: 50%;
+        width: 150px;
+        height: 50px;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .booking-popup {
+        display: none;
     }
 }
 
+
+@media (min-width: $breakpoint-tablet) {
+
+}
 
 @media (min-width: $breakpoint-desktop) {
     main {
