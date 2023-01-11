@@ -5,6 +5,9 @@ import gsap from 'gsap';
 const menuBtn: HTMLButtonElement | null = document.querySelector('#menu-btn');
 const menuSausages: SVGElement[] | null = Array.from(document.querySelectorAll('.menu-sausages'));
 
+const navContainer: HTMLDivElement | null = document.querySelector('#nav-container');
+const nav: HTMLElement | null = document.querySelector('#nav');
+
 let clicked = false;
 
 function toggleNavMenu(): void {
@@ -13,6 +16,17 @@ function toggleNavMenu(): void {
     menuSausages.forEach((sausage) => {
       gsap.to(sausage, { duration: 1, rotation: clicked ? 180 : 0, transformOrigin: '50% 50%' });
     });
+  }
+  if (navContainer && nav) {
+    navContainer.classList.toggle('hidden');
+    if (clicked) {
+      gsap.to(nav, {
+        top: 0,
+        duration: 0.5,
+      });
+    } else {
+      nav.style.top = '-100vh';
+    }
   }
 }
 
