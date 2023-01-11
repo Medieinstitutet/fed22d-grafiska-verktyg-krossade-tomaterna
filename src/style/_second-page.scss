@@ -6,6 +6,15 @@ main {
     margin-top: -20px;
     display: flex;
     flex-direction: column;
+
+    ul {
+        list-style: none;
+        padding-inline-start: 0px;
+    }
+        li {
+            margin: 10px 0;
+            line-height: 1.5rem;
+        }
 }
 
 .table-picture {
@@ -40,5 +49,9 @@ main {
     .food {
         flex-direction: row;
         justify-content: center;
+
+        .menu-sections {
+            margin: 0 80px;
+        }
     }
 }
