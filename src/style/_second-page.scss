@@ -16,6 +16,10 @@ main {
     .table-picture {
         width: 345px;
     }
+
+    .bottom-card {
+        display: none;
+    }
 }
 
 @media (min-width: $breakpoint-desktop) {
@@ -23,8 +27,8 @@ main {
         background-color: #343833;
         margin-top: -130px;
         margin-bottom: -5px;
-        border-top-left-radius: 50% 80%;
-        border-top-right-radius: 50% 80%;
+        border-top-left-radius: 50% 90%;
+        border-top-right-radius: 50% 90%;
       }
 
     .table-picture {
