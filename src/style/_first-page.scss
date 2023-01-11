@@ -15,11 +15,25 @@
 @media (min-width: $breakpoint-tablet) {
     .first-page {
         background-image: url("/assets/hero/tablet.jpg");
+        height: 120vh;
+
+        .top-card {
+            display: flex;
+            position: absolute;
+            right: 10px;
+            bottom: -150px
+        }
     }
 }
 
 @media (min-width: $breakpoint-desktop) {
     .first-page {
         background-image: url("/assets/hero/desktop.jpg");
+        background-position: top;
+
+        .top-card {
+            right: 80px;
+            bottom: -250px;
+        }
     }
 }
