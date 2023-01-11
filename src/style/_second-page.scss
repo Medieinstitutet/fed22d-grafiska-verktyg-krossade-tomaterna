@@ -12,6 +12,7 @@ main {
         border-radius: 0 0 250px 250px;
         box-shadow: inset 13px 12px 4px 3px rgba(0, 201, 172, 0.25);
         // filter: blur(2px);
+        opacity: 80%;
         margin-left: 10px;
         margin-right: 10px;
         height: 400px;
@@ -23,20 +24,20 @@ main {
         .card-info {
             display: flex;
             flex-direction: column;
-            gap: 30px;
+            gap: 20px;
 
-            .card-begransat-erbjudande {
+            .card-topic {
                 font-family: 'Fugaz One';
                 font-size: 24px;
-                color: #FFE9CF;
+                color: $secondary-light;
             }
-            .card-tabberaset {
+            .card-title {
                 font-family: 'Roboto';
                 font-size: 24px;
                 font-weight: 700;
-                color: #FFE9CF;
+                color: $secondary-light;
             }
-            .card-alla-ratter {
+            .card-text {
                 font-family: Roboto;
                 font-size: 20px;
                 font-weight: 400;
@@ -65,7 +66,7 @@ main {
 @media (min-width: $breakpoint-desktop) {
     main {
         margin-top: -150px;
-        border-top-left-radius: 100% 60%;
-        border-top-right-radius: 100% 60%;
+        border-top-left-radius: 100% 30%;
+        border-top-right-radius: 100% 30%;
       }
 }
