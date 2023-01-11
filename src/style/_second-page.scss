@@ -1,5 +1,4 @@
 main {
-    background-color: #343833;
     color: #C5AFA2;
 
     .food {
@@ -20,10 +19,12 @@ main {
 }
 
 @media (min-width: $breakpoint-desktop) {
-    main {
+    .curved {
+        background-color: #343833;
         margin-top: -130px;
-        border-top-left-radius: 50% 60%;
-        border-top-right-radius: 50% 60%;
+        margin-bottom: -5px;
+        border-top-left-radius: 50% 80%;
+        border-top-right-radius: 50% 80%;
       }
 
     .table-picture {

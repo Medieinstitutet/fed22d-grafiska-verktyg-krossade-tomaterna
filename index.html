@@ -8,20 +8,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto+Slab&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kommandorans</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto+Slab&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
   </head>
+
   <body>
-      <section class="first-page">
-        <header>
-          <div class="logo">
-            <img class="logo-img" src="assets/logo/kommandoran.png" alt="Kommandoran"  width="160" height="245">
-            <div class="logo-text">
-              <h1 class="logo-heading">Kommandorans</h1>
-              <h5 class="logo-sub-heading">- Lyxmat för var mans plånbok</h5>
-            </div>
+    <section class="first-page">
+      <header>
+        <div class="logo">
+          <img class="logo-img" src="assets/logo/kommandoran.png" alt="Kommandoran"  width="160" height="245">
+          <div class="logo-text">
+            <h1 class="logo-heading">Kommandorans</h1>
+            <h5 class="logo-sub-heading">- Lyxmat för var mans plånbok</h5>
           </div>
-          <button id="menu-btn" class="menu-btn">
-            <svg version="1.1" class="doner-menu-img" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-               viewBox="0 -200 800 1150" style="enable-background:new 0 0 800 800;" xml:space="preserve">
+        </div>
+        <button id="menu-btn" class="menu-btn">
+          <svg version="1.1" class="doner-menu-img" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 -200 800 1150" style="enable-background:new 0 0 800 800;" xml:space="preserve">
             <style type="text/css">
               .st0 {
                 fill: #75433B;
@@ -144,38 +150,53 @@
         </nav>
       </div>
       <div class="header-buttons">
-        <button class="primary-button">Boka bord</button>
-        <button class="secondary-button">Tabberaset</button>
+        <button class="primary-button menu-btn">Boka bord</button>
+        <button class="secondary-button menu-btn">Tabberaset</button>
       </div>
-      <div class="card"></div>
+
+      <div class="card top-card">
+
+        <div class="card-info">
+          <p class="card-topic">Begränsat erbjudande</p>
+          <p class="card-title">TABBERASET</p>
+          <p class="card-text">Alla rätter på menyn, endast till sällskap över fyra personer</p>
+        </div>
+        <button class="primary-button card-button">Boka bord</button>
+
+        <form class="booking-popup">
+          <label>Ditt namn</label><br>
+          <input placeholder="Förnamn Efternamn">
+        </form>
+
+      </div>
+
       <div class="cookie-container">
-        <section class="cookie-txt-container">
-          <h6 class="cookie-header">Cookies</h6>
-          <p class="cookie-txt">
-            Vi använder cookies på den här sidan för att ge dig en bättre upplevelse.
-            Vissa behövs för att sidan ska fungera korrekt men andra kan du välja att godkänna.
-          </p>
+        <section class="cookie-txt">
+          <p>Cookies
+          Vi använder cookies på den här sidan för att ge dig en bättre upplevelse. 
+          Vissa behövs för att sidan ska fungera korrekt men andra kan du välja att godkänna.</p>
         </section>
-        <section class="link-and-btn-container">
-          <a href="" class="cookie-link">Cookies-inställningar</a>
-          <div class="cookie-btns">
-            <button id="accept-cookies" class="primary-button">Godkänn</button>
-            <button id="decline-cookies" class="secondary-button">Avböj</button>
-          </div>
+        <section class="link-and-btn">
+          <a href="">Cookies-inställningar</a>
+          <button>Godkänn</button>
+          <button>Avböj</button>
         </section>
       </div>
+
     </section>
 
     <main>
       <div class="food">
-        <h2>Meny</h2>
+        <section class="curved">
+          <h2>Meny</h2>
+        </section>
         <section>
           <h3>Förrätter</h3>
           <ul>
             <li>
               Alfreds potäter
               -potatis med salt
-            </li>
+            </li> 
             <li>
               Almas kräfter
               -nyfångade kräftor från lokal å i Lönneberga
@@ -194,7 +215,7 @@
               -traditionellt recept med rimmat fläsk
             </li>
             <li>
-              Emils köttsoppa
+              Emils köttsoppa 
               - långkok på nötkött och olika slag av kål
             </li>
             <li>
@@ -221,39 +242,51 @@
           </ul>
         </section>
       </div>
-      <img src="" alt="">
-      <div class="card">TestTEST</div>
-      <div class="book-table">
-        <form>
+
+      <img class="table-picture" width="420" height="auto" src="/assets/img/chefs-table.jpg" alt="dinner around table picture">
+
+      <div class="card bottom-card">
+        <div class="card-info">
+          <p class="card-topic">Begränsat erbjudande</p>
+          <p class="card-title">TABBERASET</p>
+          <p class="card-text">Alla rätter på menyn, endast till sällskap över fyra personer</p>
+        </div>
+        <button class="primary-button card-button">Boka bord</button>
+
+        <form class="booking-popup">
           <label>Ditt namn</label><br>
           <input placeholder="Förnamn Efternamn">
         </form>
+
       </div>
     </main>
 
     <footer>
       <div class="flex-containers">
-        <div>
-          Öppettider
-          tis-fre: kl 11.30 - 22.00
+        <div class="open-hours">
+          Öppettider<br>
+          tis-fre: kl 11.30 - 22.00<br>
           lör: 13.00 - 22.00
         </div>
-        <div>
-          Hitta hit
-          Stora Katthults Väg 7
+        <div class="find-us">
+          Hitta hit<br>
+          Stora Katthults Väg 7<br>
           122 31 Enskede, Stockholm
         </div>
-      </div>
-      <div class="flex-containers">
-        <div>
-          Kontakt
-          08-40 91 98 10
+        <div class="contact-info">
+          Kontakt<br>
+          <a href="/">08-40 91 98 10</a><br>
           <a href="/">kontakt@kommandoran.se</a>
         </div>
-        <div>FB/IG</div>
+        <div class="so-me-icons">
+          <img width="50" src="/assets/socials/facebook logo_icon.svg" alt="facebook logo icon">
+          <img width="50" src="/assets/socials/instagram_icon.svg" alt="instagram logo icon">
+        </div>
       </div>
     </footer>
+
   </div>
+
   <script type="module" src="/src/main.ts"></script>
 </body>
 
