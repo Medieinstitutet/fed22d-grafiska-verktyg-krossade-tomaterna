@@ -10,8 +10,11 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
+    min-height: 100%;
+    width: 100%;
     margin: 0;
+    overflow-x: hidden;
 }
 
 $breakpoint-tablet: 744px;
@@ -23,3 +26,7 @@ $breakpoint-desktop: 1440px;
 @import './second-page';
 @import './footer';
 @import './cookie-banner';
+
+.hidden {
+    display: none;
+}
