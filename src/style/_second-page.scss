@@ -35,6 +35,8 @@ main {
 }
 
 .table-picture {
+    display: flex;
+    margin: 30px auto 30px auto;
     width: 270px;
     border: 6px solid rgba(32, 32, 32, 0.57);
     box-shadow: 10px 15px 35px 35px rgba(32, 32, 32, 0.50), inset 10px 10px 70px 20px rgba(0, 0, 0, 0.6);
