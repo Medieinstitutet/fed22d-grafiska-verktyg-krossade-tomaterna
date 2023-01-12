@@ -141,9 +141,37 @@ a {
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
+}
 
-    .booking-popup {
-        display: none;
+.booking-form {
+    background-color: darkgreen;
+    border-radius: 80px;
+    font-family: Roboto;
+    font-size: 1rem;
+    display: flex;
+    width: 341px;
+    padding: 20px;
+    gap: 10px;
+
+    .booking-form-title {
+        margin: 0;
+        // text-align: center;
+    }
+
+    .label-title {
+        // margin-left: 25px;
+    }
+
+    .booking-buttons {
+        // display: flex;
+        // justify-content: space-between;
+        // margin-top: 20px;
+        // margin-left: 5px;
+        // margin-right: 5px;
+
+        button {
+            width: 120px;
+        }
     }
 }
 

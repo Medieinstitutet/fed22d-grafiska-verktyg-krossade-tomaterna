@@ -17,6 +17,16 @@ html, body {
     overflow-x: hidden;
 }
 
+// Removes scroll from input boxes in form
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 $breakpoint-tablet: 744px;
 $breakpoint-desktop: 1220px;
 

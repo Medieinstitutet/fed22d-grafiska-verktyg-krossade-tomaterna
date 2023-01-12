@@ -52,3 +52,15 @@ function declineCookies() {
 menuBtn?.addEventListener('click', toggleNavMenu);
 acceptCookiesBtn?.addEventListener('click', acceptCookies);
 declineCookiesBtn?.addEventListener('click', declineCookies);
+
+// BOOKING FORM POPUP
+
+const bookTableBtn = document.querySelector('#test') as HTMLButtonElement;
+
+const bookingForm = document.getElementById('bookingForm') as HTMLFormElement;
+
+function displayBookingForm() {
+  bookingForm.style.display = 'block';
+}
+
+bookTableBtn.addEventListener('click', displayBookingForm);

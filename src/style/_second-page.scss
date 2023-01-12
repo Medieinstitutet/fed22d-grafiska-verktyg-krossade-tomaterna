@@ -1,5 +1,10 @@
 main {
     color: #C5AFA2;
+
+    .bottom-card {
+        display: flex;
+        margin: 30px auto 30px auto;
+    }
 }
 
 .curved h2 {
@@ -40,6 +45,11 @@ main {
     width: 270px;
     border: 6px solid rgba(32, 32, 32, 0.57);
     box-shadow: 10px 15px 35px 35px rgba(32, 32, 32, 0.50), inset 10px 10px 70px 20px rgba(0, 0, 0, 0.6);
+}
+
+.booking-form {
+    display: none;
+    margin: 30px auto 30px auto;
 }
 
 @media (min-width: $breakpoint-tablet) {
