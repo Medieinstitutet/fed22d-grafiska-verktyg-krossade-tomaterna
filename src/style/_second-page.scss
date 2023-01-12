@@ -1,8 +1,36 @@
 main {
     color: #C5AFA2;
+}
 
-    .food {
-        margin-top: -20px;
+.curved h2 {
+    font-family: 'Fugaz One', cursive;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-top: 18px;
+    margin-bottom: 60px;
+    -webkit-text-stroke: 1px black;
+}
+
+.food {
+    margin-top: -80px;
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: column;
+
+    ul {
+        font-family: Roboto;
+        list-style: none;
+        padding-inline-start: 0px;
+    }
+        li {
+            margin: 10px 0;
+            line-height: 1.5rem;
+        }
+    
+    .menu-list span {
+        font-style: italic;
+        font-weight:100;
     }
 }
 
@@ -20,12 +48,17 @@ main {
     .bottom-card {
         display: none;
     }
+
+    .food {
+        margin-top: -80px;
+        margin-left: 20vw;
+    }
 }
 
 @media (min-width: $breakpoint-desktop) {
     .curved {
         background-color: #343833;
-        margin-top: -130px;
+        margin-top: -110px;
         margin-bottom: -5px;
         border-top-left-radius: 50% 90%;
         border-top-right-radius: 50% 90%;
@@ -33,5 +66,16 @@ main {
 
     .table-picture {
         width: 420px;
+    }
+
+    .food {
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 80px;
+
+        .menu-sections {
+            margin: 0 80px;
+        }
     }
 }
