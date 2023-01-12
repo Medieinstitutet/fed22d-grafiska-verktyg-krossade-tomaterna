@@ -8,6 +8,7 @@ main {
     font-weight: 400;
     font-size: 2.5rem;
     margin-top: 18px;
+    margin-bottom: 60px;
     -webkit-text-stroke: 1px black;
 }
 
@@ -17,22 +18,19 @@ main {
     display: flex;
     flex-direction: column;
 
-    .menu-sections:first-of-type {
-        margin-top: 30px;
+    ul {
+        font-family: Roboto;
+        list-style: none;
+        padding-inline-start: 0px;
     }
-
-        ul {
-            list-style: none;
-            padding-inline-start: 0px;
+        li {
+            margin: 10px 0;
+            line-height: 1.5rem;
         }
-            li {
-                margin: 10px 0;
-                line-height: 1.5rem;
-            }
     
     .menu-list span {
         font-style: italic;
-        font-weight: 200;
+        font-weight:100;
     }
 }
 
