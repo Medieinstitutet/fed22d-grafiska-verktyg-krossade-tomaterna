@@ -60,6 +60,13 @@
         }
     }
 
+.header-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50vh;
+    align-items: flex-end;
+}
+
 @media (min-width: $breakpoint-tablet) {
     .first-page {
         background-image: url("/assets/hero/tablet.jpg");
@@ -71,6 +78,10 @@
             right: 10px;
             bottom: -150px
         }
+    }
+
+    .header-buttons {
+        display: none;
     }
 
     .nav-container {
