@@ -23,6 +23,10 @@ footer {
     
     .contact-info { 
         grid-area: 3 / 1 / 4 / 2; 
+
+        a {
+            color: black;
+        }
     }
     
     .so-me-icons { 
