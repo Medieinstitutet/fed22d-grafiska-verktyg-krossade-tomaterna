@@ -13,7 +13,9 @@ const acceptCookiesBtn: HTMLButtonElement | null = document.querySelector('#acce
 const declineCookiesBtn: HTMLButtonElement | null = document.querySelector('#decline-cookies');
 const cookiesApproved: boolean | null = JSON.parse(localStorage.getItem('cookiesApproved') as string) as boolean;
 
-const bookTableBtnTop = document.querySelector('#top-book-table') as HTMLButtonElement;
+const bookTableSingleBtn = document.querySelector('#singleBookTable') as HTMLButtonElement;
+
+const bookTableBtnTop = document.querySelector('#topBookTable') as HTMLButtonElement;
 const bookingFormTop = document.getElementById('bookingFormTop') as HTMLFormElement;
 const bookTableBtnBottom = document.querySelector('#bottom-book-table') as HTMLButtonElement;
 const bookingFormBottom = document.getElementById('bookingFormBottom') as HTMLFormElement;
@@ -66,5 +68,14 @@ function displayBottomBookingForm() {
   bookingFormBottom.style.display = 'block';
 }
 
+bookTableSingleBtn.addEventListener('click', displayBottomBookingForm);
 bookTableBtnTop.addEventListener('click', displayTopBookingForm);
 bookTableBtnBottom.addEventListener('click', displayBottomBookingForm);
+
+const scrollToForm = document.querySelector('#singleBookTable') as HTMLButtonElement;
+
+function goToForm() {
+  bookingFormBottom.scrollIntoView();
+}
+
+scrollToForm.addEventListener('click', goToForm);
