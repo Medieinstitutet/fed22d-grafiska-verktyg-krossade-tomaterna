@@ -87,9 +87,9 @@ a {
 }
 
 .card {
-    background-color: #8F7B6E;
+    background-color: $secondary-dark;
     border-radius: 0 0 250px 250px;
-    box-shadow: inset 0 0 5px 5px #00C9AC, 0 0 5px 5px #00C9AC;
+    box-shadow: inset 0 0 5px 5px $primary-accessory, 0 0 5px 5px $primary-accessory;
     opacity: 90%;
     margin-left: 10px;
     margin-right: 10px;
@@ -144,30 +144,36 @@ a {
 }
 
 .booking-form {
-    background-color: darkgreen;
+    background-color: $primary-dark;
+    opacity: 150%;
     border-radius: 80px;
     font-family: Roboto;
-    font-size: 1rem;
     display: flex;
     width: 341px;
     padding: 20px;
-    gap: 10px;
+    text-align: left;
 
     .booking-form-title {
-        margin: 0;
-        // text-align: center;
+        margin-top: 0;
+        margin-bottom: 20px;
+        text-align: center;
     }
 
     .label-title {
-        // margin-left: 25px;
+        margin-left: 20px;
+    }
+
+    input {
+        margin-top: 5px;
+        margin-bottom: 10px;
     }
 
     .booking-buttons {
-        // display: flex;
-        // justify-content: space-between;
-        // margin-top: 20px;
-        // margin-left: 5px;
-        // margin-right: 5px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
 
         button {
             width: 120px;
