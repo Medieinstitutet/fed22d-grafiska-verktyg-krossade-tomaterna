@@ -20,6 +20,8 @@ const bookingFormTop = document.getElementById('bookingFormTop') as HTMLFormElem
 const bookTableBtnBottom = document.querySelector('#bottom-book-table') as HTMLButtonElement;
 const bookingFormBottom = document.getElementById('bookingFormBottom') as HTMLFormElement;
 
+const scrollToForm = document.querySelector('#singleBookTable') as HTMLButtonElement;
+
 let clicked = false;
 
 if (cookiesApproved) {
@@ -71,8 +73,6 @@ function displayBottomBookingForm() {
 bookTableSingleBtn.addEventListener('click', displayBottomBookingForm);
 bookTableBtnTop.addEventListener('click', displayTopBookingForm);
 bookTableBtnBottom.addEventListener('click', displayBottomBookingForm);
-
-const scrollToForm = document.querySelector('#singleBookTable') as HTMLButtonElement;
 
 function goToForm() {
   bookingFormBottom.scrollIntoView();
