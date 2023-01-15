@@ -74,6 +74,36 @@ bookTableSingleBtn.addEventListener('click', displayBottomBookingForm);
 bookTableBtnTop.addEventListener('click', displayTopBookingForm);
 bookTableBtnBottom.addEventListener('click', displayBottomBookingForm);
 
+function enableBookBtn(form: HTMLFormElement) {
+  const formOrderBtn = form.querySelector('.form-order-btn') as HTMLButtonElement;
+
+  let shouldEnable = true;
+
+  const inputElements = form.querySelectorAll('input');
+
+  for (let i = 0; i < inputElements.length; i++) {
+    if (inputElements[i].value === '') {
+      shouldEnable = false;
+    }
+  }
+
+  formOrderBtn.disabled = !shouldEnable;
+}
+
+function initializeForm(form: HTMLFormElement) {
+  const formOrderBtn = form.querySelector('.form-order-btn') as HTMLButtonElement;
+  formOrderBtn.disabled = true;
+
+  const inputElements = form.querySelectorAll('input');
+
+  for (let i = 0; i < inputElements.length; i++) {
+    inputElements[i].addEventListener('input', () => enableBookBtn(form));
+  }
+}
+
+initializeForm(bookingFormTop);
+initializeForm(bookingFormBottom);
+
 function goToForm() {
   bookingFormBottom.scrollIntoView();
 }
