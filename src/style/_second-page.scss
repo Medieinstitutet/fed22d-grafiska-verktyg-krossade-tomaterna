@@ -1,6 +1,15 @@
 main {
-    color: #C5AFA2;
+    color: $primary-light;
 }
+
+.bottom-card {
+    display: block;
+    margin: 30px auto 30px auto;
+}
+
+// .bottom-booking-form {
+//     display: block;
+// }
 
 .curved h2 {
     font-family: 'Fugaz One', cursive;
@@ -42,6 +51,11 @@ main {
     box-shadow: 10px 15px 35px 35px rgba(32, 32, 32, 0.50), inset 10px 10px 70px 20px rgba(0, 0, 0, 0.6);
 }
 
+.booking-form {
+    display: none;
+    margin: 30px auto 30px auto;
+}
+
 @media (min-width: $breakpoint-tablet) {
     .table-picture {
         width: 345px;
@@ -49,6 +63,10 @@ main {
 
     .bottom-card {
         display: none;
+    }
+
+    .bottom-booking-form {
+        display: none !important;
     }
 
     .food {
@@ -59,7 +77,7 @@ main {
 
 @media (min-width: $breakpoint-desktop) {
     .curved {
-        background-color: #343833;
+        background-color: $primary-dark;
         margin-top: -110px;
         margin-bottom: -5px;
         border-top-left-radius: 50% 90%;

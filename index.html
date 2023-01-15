@@ -150,7 +150,7 @@
         </nav>
       </div>
       <div class="header-buttons">
-        <button class="primary-button">Boka bord</button>
+        <button class="primary-button" id="singleBookTable">Boka bord</button>
         <button class="secondary-button">Tabberaset</button>
       </div>
 
@@ -161,11 +161,32 @@
           <p class="card-title">TABBERASET</p>
           <p class="card-text">Alla rätter på menyn, endast till sällskap över fyra personer</p>
         </div>
-        <button class="primary-button card-button">Boka bord</button>
+        <button class="primary-button card-button" id="topBookTable">Boka bord</button>
 
-        <form class="booking-popup">
-          <label>Ditt namn</label><br>
-          <input placeholder="Förnamn Efternamn">
+        <form class="booking-form top-booking-form" id="bookingFormTop">
+          <h4 class="booking-form-title">Boka bord</h4>
+          <label>
+            <span class="label-title">Ditt namn</span>
+            <input type="text" placeholder="Förnamn Efternamn">
+          </label>
+          <label>
+            <span class="label-title">Mejladress</span>
+            <input type="email" placeholder="Mejladress">
+          </label>
+          <label>
+            <span class="label-title">Telefonnummer</span>
+            <input type="number" placeholder="Telefonnummer">
+          </label>
+          <label>
+            <span type="number" class="label-title">Antal personer i sällskapet</span>
+            <input>
+          </label>
+          
+          <div class="booking-buttons">
+            <button class="secondary-button">Boka bord</button>
+            <button class="disabled-button">Avbryt</button>
+          </div>
+  
         </form>
 
       </div>
@@ -256,14 +277,35 @@
           <p class="card-title">TABBERASET</p>
           <p class="card-text">Alla rätter på menyn, endast till sällskap över fyra personer</p>
         </div>
-        <button class="primary-button card-button">Boka bord</button>
-
-        <form class="booking-popup">
-          <label>Ditt namn</label><br>
-          <input placeholder="Förnamn Efternamn">
-        </form>
-
+        <button class="primary-button card-button" id="bottom-book-table">Boka bord</button>
       </div>
+
+      <form class="booking-form bottom-booking-form" id="bookingFormBottom">
+        <h4 class="booking-form-title">Boka bord</h4>
+        <label>
+          <span class="label-title">Ditt namn</span>
+          <input type="text" placeholder="Förnamn Efternamn">
+        </label>
+        <label>
+          <span class="label-title">Mejladress</span>
+          <input type="email" placeholder="Mejladress">
+        </label>
+        <label>
+          <span class="label-title">Telefonnummer</span>
+          <input type="number" placeholder="Telefonnummer">
+        </label>
+        <label>
+          <span type="number" class="label-title">Antal personer i sällskapet</span>
+          <input>
+        </label>
+        
+        <div class="booking-buttons">
+          <button class="secondary-button">Boka bord</button>
+          <button class="disabled-button">Avbryt</button>
+        </div>
+
+      </form>
+
     </main>
 
     <footer>

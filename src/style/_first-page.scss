@@ -2,14 +2,18 @@
 
 .first-page {
     background-image: url("/assets/hero/mobile.jpg");
-    background-color: #343833;
+    background-color: $primary-dark;
     height: 100vh;
     margin: 0;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
-    .top-card{
+    .top-card {
+        display: none;
+    }
+
+    .top-booking-form {
         display: none;
     }
 }
@@ -77,6 +81,13 @@
             position: absolute;
             right: 10px;
             bottom: -150px
+        }
+
+        .top-booking-form {
+            position: relative;
+            bottom: 590px;
+            height: 540px;
+            color: $secondary-light;
         }
     }
 

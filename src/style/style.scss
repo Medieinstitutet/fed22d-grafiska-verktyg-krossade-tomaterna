@@ -1,9 +1,6 @@
-* {
-    box-sizing: border-box;
-}
-
 :root {
     background-color: #343833;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -15,6 +12,16 @@ html, body {
     width: 100%;
     margin: 0;
     overflow-x: hidden;
+}
+
+// Removes scroll from input boxes in form
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 $breakpoint-tablet: 744px;
