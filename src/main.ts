@@ -87,7 +87,11 @@ function enableBookBtn(form: HTMLFormElement) {
     }
   }
 
-  formOrderBtn.disabled = !shouldEnable;
+  if (shouldEnable) {
+    formOrderBtn.disabled = false;
+    formOrderBtn.classList.remove('secondary-button');
+    formOrderBtn.classList.add('primary-button');
+  }
 }
 
 function initializeForm(form: HTMLFormElement) {
