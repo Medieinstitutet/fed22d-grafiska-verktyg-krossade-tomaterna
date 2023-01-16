@@ -37,3 +37,7 @@ $breakpoint-desktop: 1024px;
 .hidden {
     display: none;
 }
+
+.no-scroll {
+  overflow: hidden;
+}

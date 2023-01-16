@@ -47,6 +47,7 @@ main {
     display: flex;
     margin: 30px auto 30px auto;
     width: 270px;
+    height: auto;
     border: 6px solid rgba(32, 32, 32, 0.57);
     box-shadow: 10px 15px 35px 35px rgba(32, 32, 32, 0.50), inset 10px 10px 70px 20px rgba(0, 0, 0, 0.6);
 }
@@ -59,6 +60,7 @@ main {
 @media (min-width: $breakpoint-tablet) {
     .table-picture {
         width: 345px;
+        height: auto;
     }
 
     .bottom-card {
@@ -86,6 +88,7 @@ main {
 
     .table-picture {
         width: 420px;
+        height: auto;
     }
 
     .food {
