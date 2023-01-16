@@ -63,6 +63,8 @@ menuBtn?.addEventListener('click', toggleNavMenu);
 acceptCookiesBtn?.addEventListener('click', acceptCookies);
 declineCookiesBtn?.addEventListener('click', declineCookies);
 
+navContainer?.addEventListener('click', toggleNavMenu);
+
 function displayTopBookingForm() {
   bookingFormTop.style.display = 'block';
 }
