@@ -63,7 +63,7 @@ acceptCookiesBtn?.addEventListener('click', acceptCookies);
 declineCookiesBtn?.addEventListener('click', declineCookies);
 
 function displayTopBookingForm() {
-  bookingFormTop.style.display = 'block';
+  bookingFormTop.classList.add('visible');
 }
 
 function displayBottomBookingForm() {

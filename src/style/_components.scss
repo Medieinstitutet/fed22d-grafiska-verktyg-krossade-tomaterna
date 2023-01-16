@@ -145,7 +145,7 @@ a {
 
 .booking-form {
     background-color: $primary-dark;
-    opacity: 150%;
+    color: $secondary-light;
     border-radius: 80px;
     font-family: Roboto;
     display: flex;
@@ -157,6 +157,8 @@ a {
         margin-top: 0;
         margin-bottom: 20px;
         text-align: center;
+        color: $primary-light;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     }
 
     .label-title {
