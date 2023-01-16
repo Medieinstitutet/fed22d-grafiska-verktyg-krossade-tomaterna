@@ -45,6 +45,7 @@ function toggleNavMenu(): void {
     } else {
       nav.style.top = '-100vh';
     }
+    document.querySelector('html')?.classList.toggle('no-scroll');
   }
 }
 
