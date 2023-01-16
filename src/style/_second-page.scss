@@ -45,8 +45,9 @@ main {
 
 .table-picture {
     display: flex;
-    margin: 30px auto 30px auto;
-    width: 270px;
+    margin: 50px auto 100px auto;
+    width: 274px;
+    height: 193;
     border: 6px solid rgba(32, 32, 32, 0.57);
     box-shadow: 10px 15px 35px 35px rgba(32, 32, 32, 0.50), inset 10px 10px 70px 20px rgba(0, 0, 0, 0.6);
 }
@@ -58,7 +59,8 @@ main {
 
 @media (min-width: $breakpoint-tablet) {
     .table-picture {
-        width: 345px;
+        width: 440px;
+        height: 240px;
     }
 
     .bottom-card {
@@ -69,9 +71,25 @@ main {
         display: none !important;
     }
 
+    .curved h2 {
+        font-size: 4rem;
+    }
+
     .food {
         margin-top: -80px;
         margin-left: 20vw;
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        li {
+            font-size: 1.125rem;
+        }
+
+        .menu-sections h3:first-of-type {
+            margin-top: 70px;
+        }
     }
 }
 
@@ -86,6 +104,7 @@ main {
 
     .table-picture {
         width: 420px;
+        height: 340px;
     }
 
     .food {
