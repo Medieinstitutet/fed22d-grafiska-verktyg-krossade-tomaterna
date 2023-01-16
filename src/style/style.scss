@@ -25,7 +25,7 @@ input[type=number] {
 }
 
 $breakpoint-tablet: 744px;
-$breakpoint-desktop: 1220px;
+$breakpoint-desktop: 1024px;
 
 @import './components';
 @import './header';
