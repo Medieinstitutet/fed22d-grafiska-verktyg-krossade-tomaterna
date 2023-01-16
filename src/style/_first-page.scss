@@ -12,14 +12,6 @@
     .top-card-and-form-parent {
         display: none;
     }
-
-    // .top-card {
-    //     display: none;
-    // }
-
-    // .top-booking-form {
-    //     display: none;
-    // }
 }
 
 .nav-container {
@@ -91,7 +83,7 @@
                 position: absolute;
                 z-index: 0;
                 right: 10px;
-                bottom: -150px
+                top: 370px;
             }
 
             .top-booking-form-parent {
@@ -106,6 +98,10 @@
                 height: auto;
                 width: 361px;
                 margin-top: 0;
+
+                .booking-buttons {
+                    margin-right: 25px;
+                }
             }
         }
     }
@@ -133,6 +129,10 @@
         background-position: top;
 
         .top-card-and-form-parent {
+            .top-card {
+                top: 430px;
+                right: 50px;
+            }
             .top-booking-form-parent {
                 width: 50vw;
             }
