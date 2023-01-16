@@ -23,22 +23,22 @@ const bookingFormBottom = document.getElementById('bookingFormBottom') as HTMLFo
 
 const scrollToForm = document.querySelector('#singleBookTable') as HTMLButtonElement;
 
-let clicked = false;
+let navMenuBtnClicked = false;
 
 if (cookiesApproved) {
   cookieContainer?.classList.toggle('hidden');
 }
 
 function toggleNavMenu(): void {
-  clicked = !clicked;
+  navMenuBtnClicked = !navMenuBtnClicked;
   if (menuSausages) {
     menuSausages.forEach((sausage) => {
-      gsap.to(sausage, { duration: 1, rotation: clicked ? 180 : 0, transformOrigin: '50% 50%' });
+      gsap.to(sausage, { duration: 1, rotation: navMenuBtnClicked ? 180 : 0, transformOrigin: '50% 50%' });
     });
   }
   if (navContainer && nav) {
     navContainer.classList.toggle('hidden');
-    if (clicked) {
+    if (navMenuBtnClicked) {
       gsap.to(nav, {
         top: 0,
         duration: 0.5,
