@@ -67,7 +67,7 @@ declineCookiesBtn?.addEventListener('click', declineCookies);
 navContainer?.addEventListener('click', toggleNavMenu);
 
 function displayTopBookingForm() {
-  bookingFormTop.style.display = 'block';
+  bookingFormTop.classList.add('visible');
 }
 
 function displayBottomBookingForm() {
