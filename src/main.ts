@@ -14,6 +14,7 @@ const declineCookiesBtn: HTMLButtonElement | null = document.querySelector('#dec
 const cookiesApproved: boolean | null = JSON.parse(localStorage.getItem('cookiesApproved') as string) as boolean;
 
 const bookTableSingleBtn = document.querySelector('#singleBookTable') as HTMLButtonElement;
+const bookTableMenuOption: HTMLLinkElement | null = document.querySelector('#book-table-menu-option');
 
 const bookTableBtnTop = document.querySelector('#topBookTable') as HTMLButtonElement;
 const bookingFormTop = document.getElementById('bookingFormTop') as HTMLFormElement;
@@ -22,22 +23,22 @@ const bookingFormBottom = document.getElementById('bookingFormBottom') as HTMLFo
 
 const scrollToForm = document.querySelector('#singleBookTable') as HTMLButtonElement;
 
-let clicked = false;
+let navMenuBtnClicked = false;
 
 if (cookiesApproved) {
   cookieContainer?.classList.toggle('hidden');
 }
 
 function toggleNavMenu(): void {
-  clicked = !clicked;
+  navMenuBtnClicked = !navMenuBtnClicked;
   if (menuSausages) {
     menuSausages.forEach((sausage) => {
-      gsap.to(sausage, { duration: 1, rotation: clicked ? 180 : 0, transformOrigin: '50% 50%' });
+      gsap.to(sausage, { duration: 1, rotation: navMenuBtnClicked ? 180 : 0, transformOrigin: '50% 50%' });
     });
   }
   if (navContainer && nav) {
     navContainer.classList.toggle('hidden');
-    if (clicked) {
+    if (navMenuBtnClicked) {
       gsap.to(nav, {
         top: 0,
         duration: 0.5,
@@ -45,6 +46,7 @@ function toggleNavMenu(): void {
     } else {
       nav.style.top = '-100vh';
     }
+    document.querySelector('html')?.classList.toggle('no-scroll');
   }
 }
 
@@ -61,6 +63,8 @@ function declineCookies() {
 menuBtn?.addEventListener('click', toggleNavMenu);
 acceptCookiesBtn?.addEventListener('click', acceptCookies);
 declineCookiesBtn?.addEventListener('click', declineCookies);
+
+navContainer?.addEventListener('click', toggleNavMenu);
 
 function displayTopBookingForm() {
   bookingFormTop.style.display = 'block';
@@ -114,6 +118,18 @@ initializeForm(bookingFormBottom);
 
 function goToForm() {
   bookingFormBottom.scrollIntoView();
+  console.log('goToForm');
+}
+
+function scrollToBookingForm(): void {
+  if (window.innerWidth < 744) {
+    displayBottomBookingForm();
+    goToForm();
+    console.log('clicked');
+  } else {
+    displayTopBookingForm();
+  }
 }
 
 scrollToForm.addEventListener('click', goToForm);
+bookTableMenuOption?.addEventListener('click', scrollToBookingForm);
