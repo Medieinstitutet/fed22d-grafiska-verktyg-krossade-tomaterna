@@ -9,11 +9,7 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    .top-card {
-        display: none;
-    }
-
-    .top-booking-form {
+    .top-card-and-form-parent {
         display: none;
     }
 }
@@ -77,18 +73,36 @@
         background-image: url("/assets/hero/tablet.jpg");
         height: 120vh;
 
-        .top-card {
+        .top-card-and-form-parent {
             display: flex;
-            position: absolute;
-            right: 10px;
-            bottom: -150px
-        }
-
-        .top-booking-form {
+            justify-content: center;
             position: relative;
-            bottom: 590px;
-            height: 540px;
-            color: $secondary-light;
+
+            .top-card {
+                display: flex;
+                position: absolute;
+                z-index: 0;
+                right: 10px;
+                top: 370px;
+            }
+
+            .top-booking-form-parent {
+                position: relative;
+                width: 75vw;
+                background-color: $primary-dark;
+                border-radius: 80px;
+            }
+
+            .top-booking-form {
+                position: relative;
+                height: auto;
+                width: 361px;
+                margin-top: 0;
+
+                .booking-buttons {
+                    margin-right: 25px;
+                }
+            }
         }
     }
 
@@ -114,9 +128,14 @@
         background-image: url("/assets/hero/desktop.jpg");
         background-position: top;
 
-        .top-card {
-            right: 80px;
-            bottom: -220px;
+        .top-card-and-form-parent {
+            .top-card {
+                top: 430px;
+                right: 50px;
+            }
+            .top-booking-form-parent {
+                width: 50vw;
+            }
         }
     }
 

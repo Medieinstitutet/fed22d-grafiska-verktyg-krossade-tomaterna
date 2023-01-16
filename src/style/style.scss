@@ -34,6 +34,10 @@ $breakpoint-desktop: 1024px;
 @import './footer';
 @import './cookie-banner';
 
+.visible {
+  display: block;
+}
+
 .hidden {
     display: none;
 }
