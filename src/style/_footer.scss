@@ -39,6 +39,11 @@ footer {
 }
 
 @media (min-width: $breakpoint-tablet) {
+
+    footer {
+       font-size: 1.125rem;
+    }
+
     .flex-containers {
         display: flex;
         flex-wrap: wrap;
