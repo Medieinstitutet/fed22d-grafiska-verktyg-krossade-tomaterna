@@ -21,12 +21,11 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 input[type=number] {
+  appearance: textfield;
   -moz-appearance: textfield;
 }
 
-$breakpoint-tablet: 744px;
-$breakpoint-desktop: 1024px;
-
+@import './variables.module.scss';
 @import './components';
 @import './header';
 @import './first-page';

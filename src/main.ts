@@ -1,6 +1,9 @@
-/* eslint-disable linebreak-style */
 import './style/style.scss';
 import gsap from 'gsap';
+import scssVar from './style/variables.module.scss';
+import { setVisible, initializeForm } from './form';
+
+const breakpointTablet = Number(scssVar.breakpointTablet);
 
 const menuBtn: HTMLButtonElement | null = document.querySelector('#menu-btn');
 const menuSausages: SVGElement[] | null = Array.from(document.querySelectorAll('.menu-sausages'));
@@ -20,8 +23,6 @@ const bookTableBtnTop = document.querySelector('#topBookTable') as HTMLButtonEle
 const bookingFormTop = document.getElementById('bookingFormTop') as HTMLFormElement;
 const bookTableBtnBottom = document.querySelector('#bottom-book-table') as HTMLButtonElement;
 const bookingFormBottom = document.getElementById('bookingFormBottom') as HTMLFormElement;
-
-const scrollToForm = document.querySelector('#singleBookTable') as HTMLButtonElement;
 
 let navMenuBtnClicked = false;
 
@@ -60,76 +61,25 @@ function declineCookies() {
   localStorage.setItem('cookiesApproved', 'false');
 }
 
-menuBtn?.addEventListener('click', toggleNavMenu);
-acceptCookiesBtn?.addEventListener('click', acceptCookies);
-declineCookiesBtn?.addEventListener('click', declineCookies);
-
-navContainer?.addEventListener('click', toggleNavMenu);
-
-function displayTopBookingForm() {
-  bookingFormTop.classList.add('visible');
-}
-
-function displayBottomBookingForm() {
-  bookingFormBottom.style.display = 'block';
-}
-
-bookTableSingleBtn.addEventListener('click', displayBottomBookingForm);
-bookTableBtnTop.addEventListener('click', displayTopBookingForm);
-bookTableBtnBottom.addEventListener('click', displayBottomBookingForm);
-
-function enableBookBtn(form: HTMLFormElement) {
-  const formOrderBtn = form.querySelector('.form-order-btn') as HTMLButtonElement;
-
-  let shouldEnable = true;
-
-  const inputElements = form.querySelectorAll('input');
-
-  for (let i = 0; i < inputElements.length; i++) {
-    if (inputElements[i].value === '') {
-      shouldEnable = false;
-    }
-  }
-
-  if (shouldEnable) {
-    formOrderBtn.disabled = false;
-    formOrderBtn.classList.remove('secondary-button');
-    formOrderBtn.classList.add('primary-button');
+function scrollToBookingForm(): void {
+  if (window.innerWidth < breakpointTablet) {
+    setVisible(bookingFormBottom, true);
   } else {
-    formOrderBtn.disabled = true;
-    formOrderBtn.classList.remove('primary-button');
-    formOrderBtn.classList.add('secondary-button');
-  }
-}
-
-function initializeForm(form: HTMLFormElement) {
-  const formOrderBtn = form.querySelector('.form-order-btn') as HTMLButtonElement;
-  formOrderBtn.disabled = true;
-
-  const inputElements = form.querySelectorAll('input');
-
-  for (let i = 0; i < inputElements.length; i++) {
-    inputElements[i].addEventListener('input', () => enableBookBtn(form));
+    setVisible(bookingFormTop, true);
   }
 }
 
 initializeForm(bookingFormTop);
 initializeForm(bookingFormBottom);
 
-function goToForm() {
-  bookingFormBottom.scrollIntoView();
-  console.log('goToForm');
-}
+menuBtn?.addEventListener('click', toggleNavMenu);
+acceptCookiesBtn?.addEventListener('click', acceptCookies);
+declineCookiesBtn?.addEventListener('click', declineCookies);
 
-function scrollToBookingForm(): void {
-  if (window.innerWidth < 744) {
-    displayBottomBookingForm();
-    goToForm();
-    console.log('clicked');
-  } else {
-    displayTopBookingForm();
-  }
-}
+navContainer?.addEventListener('click', toggleNavMenu);
 
-scrollToForm.addEventListener('click', goToForm);
+bookTableSingleBtn.addEventListener('click', () => setVisible(bookingFormBottom, true));
+bookTableBtnTop.addEventListener('click', () => setVisible(bookingFormTop, true));
+bookTableBtnBottom.addEventListener('click', () => setVisible(bookingFormBottom, true));
+
 bookTableMenuOption?.addEventListener('click', scrollToBookingForm);
