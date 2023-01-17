@@ -1,0 +1,10 @@
+$breakpoint-tablet-value: 744;
+$breakpoint-desktop-value: 1024;
+
+$breakpoint-tablet: $breakpoint-tablet-value + 0px;
+$breakpoint-desktop: $breakpoint-desktop-value + 0px;
+
+:export {
+  breakpointTablet: $breakpoint-tablet-value;
+  breakpointDesktop: $breakpoint-desktop-value;
+}
