@@ -66,12 +66,22 @@ declineCookiesBtn?.addEventListener('click', declineCookies);
 
 navContainer?.addEventListener('click', toggleNavMenu);
 
+function setVisible(element: HTMLElement, visible: boolean) {
+  if (visible) {
+    element.classList.remove('hidden');
+    element.classList.add('visible');
+  } else {
+    element.classList.remove('visible');
+    element.classList.add('hidden');
+  }
+}
+
 function displayTopBookingForm() {
-  bookingFormTop.classList.add('visible');
+  setVisible(bookingFormTop, true);
 }
 
 function displayBottomBookingForm() {
-  bookingFormBottom.style.display = 'block';
+  setVisible(bookingFormBottom, true);
 }
 
 bookTableSingleBtn.addEventListener('click', displayBottomBookingForm);
@@ -93,17 +103,23 @@ function enableBookBtn(form: HTMLFormElement) {
 
   if (shouldEnable) {
     formOrderBtn.disabled = false;
-    formOrderBtn.classList.remove('secondary-button');
+    formOrderBtn.classList.remove('disabled-button');
     formOrderBtn.classList.add('primary-button');
   } else {
     formOrderBtn.disabled = true;
     formOrderBtn.classList.remove('primary-button');
-    formOrderBtn.classList.add('secondary-button');
+    formOrderBtn.classList.add('disabled-button');
   }
+}
+
+function cancelForm(e: Event, bookingForm: HTMLFormElement) {
+  e.preventDefault();
+  setVisible(bookingForm, false);
 }
 
 function initializeForm(form: HTMLFormElement) {
   const formOrderBtn = form.querySelector('.form-order-btn') as HTMLButtonElement;
+  const formCancelBtn = form.querySelector('.form-cancel-btn') as HTMLButtonElement;
   formOrderBtn.disabled = true;
 
   const inputElements = form.querySelectorAll('input');
@@ -111,6 +127,8 @@ function initializeForm(form: HTMLFormElement) {
   for (let i = 0; i < inputElements.length; i++) {
     inputElements[i].addEventListener('input', () => enableBookBtn(form));
   }
+
+  formCancelBtn.addEventListener('click', (e) => cancelForm(e, form));
 }
 
 initializeForm(bookingFormTop);
@@ -118,14 +136,12 @@ initializeForm(bookingFormBottom);
 
 function goToForm() {
   bookingFormBottom.scrollIntoView();
-  console.log('goToForm');
 }
 
 function scrollToBookingForm(): void {
   if (window.innerWidth < 744) {
     displayBottomBookingForm();
     goToForm();
-    console.log('clicked');
   } else {
     displayTopBookingForm();
   }
