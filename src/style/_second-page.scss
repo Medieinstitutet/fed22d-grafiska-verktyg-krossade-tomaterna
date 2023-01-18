@@ -1,0 +1,127 @@
+main {
+    color: $primary-light;
+}
+
+.bottom-card {
+    display: block;
+    margin: 30px auto 30px auto;
+}
+
+// .bottom-booking-form {
+//     display: block;
+// }
+
+.food-menu-logo {
+    font-family: 'Fugaz One', cursive;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    -webkit-text-stroke: 1px black;
+}
+
+.food {
+    margin-top: -80px;
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: column;
+
+    ul {
+        font-family: Roboto;
+        list-style: none;
+        padding-inline-start: 0px;
+    }
+        li {
+            margin: 10px 0;
+            line-height: 1.5rem;
+        }
+    
+    .menu-list span {
+        font-style: italic;
+        font-weight:100;
+    }
+}
+
+.table-picture {
+    display: flex;
+    margin: 50px auto 100px auto;
+    width: 274px;
+    height: 193;
+    border: 6px solid rgba(32, 32, 32, 0.57);
+    box-shadow: 10px 15px 35px 35px rgba(32, 32, 32, 0.50), inset 10px 10px 70px 20px rgba(0, 0, 0, 0.6);
+}
+
+.booking-form {
+    display: none;
+    margin: 30px auto 30px auto;
+}
+
+@media (min-width: $breakpoint-tablet) {
+    .table-picture {
+        width: 440px;
+        height: 240px;
+    }
+
+    .bottom-card {
+        display: none;
+    }
+
+    .bottom-booking-form {
+        display: none !important;
+    }
+
+    .food-menu-logo {
+        font-size: 4rem;
+        margin-top: 40px;
+    }
+
+    .food {
+        margin-top: -80px;
+        margin-left: 20vw;
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        li {
+            font-size: 1.125rem;
+        }
+
+        .menu-sections h3:first-of-type {
+            margin-top: 70px;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-desktop) {
+    .curved {
+        background-color: $primary-dark;
+        margin-top: -90px;
+        margin-bottom: -5px;
+        min-height: 90px;
+        border-top-left-radius: 50% 90%;
+        border-top-right-radius: 50% 90%;
+      }
+
+    .table-picture {
+        width: 420px;
+        height: 340px;
+    }
+
+    .food {
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 0;
+        margin-top: -30px;
+
+        .menu-sections {
+            margin: 0 80px;
+        }
+    }
+
+    .food-menu-logo {
+        margin-top: -30px;
+        margin-bottom: 40px;
+    }
+}

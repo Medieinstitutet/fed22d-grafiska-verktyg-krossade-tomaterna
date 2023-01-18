@@ -1,0 +1,243 @@
+$primary-dark: #343833;
+$secondary-dark: #8F7B6E;
+$primary-light: #C5AFA2;
+$secondary-light: #FFE9CF;
+$primary-accessory: #00C9AC;
+$primary-accessory-dark: #008F7B;
+
+.primary-button {
+    background-color: $primary-accessory;
+    color: $primary-dark;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px 5px 40px 40px; 
+    border-style: none;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $primary-accessory-dark;
+    }
+    
+    &:focus {
+        background-color: $primary-accessory-dark;
+        outline-color: $primary-accessory;
+    }
+}
+
+.secondary-button {
+    background-color: $primary-light;
+    color: $primary-dark;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px 5px 40px 40px; 
+    border-style: none;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $secondary-dark;        
+    }
+
+    &:focus {
+        background-color: $secondary-dark;
+        outline-color: $primary-light;
+        
+    }
+
+    &[disabled] {
+        cursor: default;
+    }
+}
+
+.disabled-button {
+    background-color: #D9D9D9;
+    color: $primary-dark;
+    border-style: solid;
+    border-color: #747373;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px 5px 40px 40px; 
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input {
+    width: 300px;
+    height: 50px;
+    padding-left: 15px;
+    background-color: $secondary-light;
+    border: 3px solid $primary-accessory;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px 40px 5px 5px;
+
+    &:valid {
+        border-color: $primary-accessory-dark;
+    }
+
+    &:invalid {
+        border-color: red;
+    }
+}
+
+a {
+    display: inline-block;
+    line-height: 20px;
+    color: $secondary-light;
+    text-decoration: underline 3px $secondary-light;
+
+    &:hover {
+        text-decoration: underline 3px $primary-accessory;
+    }
+
+    &:visited {
+        text-decoration: underline 3px $secondary-dark;
+
+        &:hover {
+            text-decoration: underline 3px $primary-accessory;
+        }
+    }
+}
+
+.card {
+    background-color: $secondary-dark;
+    border-radius: 0 0 250px 250px;
+    box-shadow: inset 0 0 5px 5px $primary-accessory, 0 0 5px 5px $primary-accessory;
+    opacity: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 400px;
+    width: 341px;
+
+    position: relative;
+    text-align: center;
+
+    .card-info {
+        margin: 0;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        width: 264px;
+        height: 50px;
+        line-height: 35px;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        
+
+        .card-topic {
+            font-family: 'Fugaz One';
+            font-size: 24px;
+            color: $secondary-light;
+        }
+        .card-title {
+            font-family: 'Roboto';
+            font-size: 24px;
+            font-weight: 700;
+            color: $secondary-light;
+        }
+        .card-text {
+            font-family: Roboto;
+            font-size: 20px;
+            font-weight: 400;
+            color: #151614;
+            width: 264px;
+        }
+    }
+
+    .card-button {
+        margin: 0;
+        position: absolute;
+        top: 88%;
+        left: 50%;
+        width: 150px;
+        height: 50px;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
+
+.booking-form {
+    background-color: $primary-dark;
+    color: $secondary-light;
+    border-radius: 80px;
+    font-family: Roboto;
+    display: flex;
+    width: 341px;
+    padding: 20px;
+    text-align: left;
+
+    .booking-form-title {
+        margin-top: 0;
+        margin-bottom: 20px;
+        text-align: center;
+        color: $primary-light;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+    .label-title {
+        margin-left: 20px;
+    }
+
+    input {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .booking-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+
+        button {
+            width: 120px;
+            height: 45px;
+        }
+    }
+}
+
+h1 {
+    font-family: 'Fugaz One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5rem;
+    line-height: calc(5rem * 1.5);
+}
+
+h2 {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: calc(4rem * 1.5);
+}
+
+h3 {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: calc(1.5rem * 1.5);
+}
+
+h4 {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: calc(3rem * 1.5);
+}
+
+h5 {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.5rem;
+    line-height: calc(2.5rem * 1.5);
+}
+
+h6 {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: calc(2rem * 1.5);
+}

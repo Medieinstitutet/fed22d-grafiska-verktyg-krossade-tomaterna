@@ -1,0 +1,46 @@
+:root {
+    background-color: #343833;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+// Removes scroll from input boxes in form
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+@import './variables.module.scss';
+@import './components';
+@import './header';
+@import './first-page';
+@import './second-page';
+@import './footer';
+@import './cookie-banner';
+
+.visible {
+  display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}

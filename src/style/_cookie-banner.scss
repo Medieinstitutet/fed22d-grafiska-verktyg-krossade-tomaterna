@@ -1,0 +1,31 @@
+.cookie-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $primary-dark;
+    color: $secondary-light;
+    border: 3px solid $primary-accessory;
+    padding: 15px;
+    z-index: 999;
+
+    .cookie-txt {
+        margin: 0 0 10px;
+    } 
+    
+    .cookie-header {
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .link-and-btn-container {
+        display: flex;
+        justify-content: space-between;
+
+        .cookie-link {
+            margin-top: 10px;
+        }
+    }
+}
+
+
