@@ -132,3 +132,60 @@ https://www.figma.com/file/vuF2awgrtiQRkeBkI1ufSO/Krossade-Tomater?node-id=0%3A1
 <br><br>
 MVH<br>
 Team Krossade Tomater
+
+/**************************************************************************************************************************/
+
+# 1 Designidéer
+
+- Kommandoran
+- Maträtter
+  - Ida
+  - Alfred
+  - Lina
+  - Tabberaset - allt i ett
+  - Alma
+  - Anton
+  - Emil
+  - Varggropen
+  - Griseknoen
+  - Kommandoran
+
+## 2 Färgtema
+
+- #8f7b6e
+- #c5afa2
+- #ffe9cf
+- #343833
+- #00c9ac (kontrasterande färg)
+
+## 3 Följande "komponenter" ska finnas med i designen:
+
+- 3-5 st färger (angett vilka som är primära, sekundära, osv.), utöver svart och vitt.
+- Rubriker nivå 1-6 (typsnitt, storlek, stil typ kursiv/fet, radavstånd)
+- Normal text (paragrafer)
+- Disclaimer-text (tänk cookies-text)
+- Länkar och deras utseenden vid olika “states”, t.ex. hover/klick/aktiv, osv.
+- 2 knappar
+- En primär knapp (tänk “Skicka”)
+- En sekundär knapp (tänk “Avbryt”)
+- “Hover states” för knapparna inkl. disabled state
+- Ett inputfält (formgivet), ej dropdown
+- Ett “kortelement”
+- Tänk citat, produktrecension, erbjudande, highlight eller någon annan sorts “lift up”-komponent
+- En bild (bilden kan också ingå i kortelementet)
+- Huvudmeny
+- Footer
+- Någonting som går att spara ner i SVG-format och utnyttja, t.ex. en logotyp/ikon/graf
+- Layouten gör ni för följande:
+
+- Mobil
+- Tablet
+- Desktop
+
+## Länkar i projektet (assets)
+
+- https://wweb.dev/resources/css-separator-generator/
+CSS - separator
+
+- https://www.pexels.com/photo/photography-of-sliced-bread-1079020/
+(brödbild)
