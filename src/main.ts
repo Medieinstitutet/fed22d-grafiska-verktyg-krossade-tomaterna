@@ -1,3 +1,5 @@
+/* eslint-disable linebreak-style */
+
 import './style/style.scss';
 import gsap from 'gsap';
 import scssVar from './style/variables.module.scss';
