@@ -2,6 +2,9 @@
 
 School project at Medieinstitutet Front End Developer program.
 
+Designed by @jenmwa, @JoeldelPilar, @arnetzlinder and @robin-sevelin 
+Coded by @alexwallden, @jeppeerixon, @hannaforssell and @tittieth
+
 ## LINK TO LIVE WEBSITE
 https://medieinstitutet.github.io/fed22d-grafiska-verktyg-krossade-tomaterna/
 
