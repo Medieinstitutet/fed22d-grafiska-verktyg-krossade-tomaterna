@@ -2,7 +2,7 @@
 
 School project at Medieinstitutet Front End Developer program.
 
-Designed by @jenmwa, @JoeldelPilar, @arnetzlinder and @robin-sevelin 
+Designed by @jenmwa, @JoeldelPilar, @arnetzlinder and @robin-sevelin<br>
 Coded by @alexwallden, @jeppeerixon, @hannaforssell and @tittieth
 
 ## LINK TO LIVE WEBSITE
